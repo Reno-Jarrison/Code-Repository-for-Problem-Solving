@@ -17,9 +17,9 @@ public:
         while (l1 || l2 || carry)
         {
             if (l1)
-                carry += l1-> val, l1 = l1->next;
+                carry += l1->val, l1 = l1->next;
             if (l2)
-                carry += l2-> val, l2 = l2->next;
+                carry += l2->val, l2 = l2->next;
             ListNode *cur = new ListNode(carry % 10);
             (!head ? head : las->next) = cur;
             carry /= 10, las = cur;            
